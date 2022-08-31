@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [BlogController::class, 'index'])
+    ->name('blog.index');
+
 Route::get('/blog', [BlogController::class, 'index'])
     ->name('blog.index');
 
